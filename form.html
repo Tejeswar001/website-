@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Form - Mindful Support</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: rgb(210, 228, 39);
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header img {
+            width: 600px;
+            margin-right: 20px;
+        }
+         
+        header h1 {
+            font-size: 56px;
+            margin: 4%;
+            color: #333;
+        }
+
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mindful</h1>
+        <img src="logo2.jpg" alt="Logo" style="height: 35%; width: 50%;">
+        <H1> Support</H1>
+    </header>
+
+    <form>
+        <label for="name">Client Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="place">Your Place:</label>
+        <input type="text" id="place" name="place" required>
+
+        <label for="date">Appointment Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="dob">Your Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="current-counselor">Current Counselor:</label>
+        <input type="text" id="current-counselor" name="current-counselor" >
+
+        <h2>Professional Information</h2>
+
+        <label for="counselor-name">Counselor's Name:</label>
+        <input type="text" id="counselor-name" name="counselor-name" required>
+
+        <label for="problem">Your Problem:</label>
+        <input type="text" id="problem" name="problem" required>
+
+        <label for="timings">Preferred Timings:</label>
+        <input type="text" id="timings" name="timings" required>
+
+        <label for="symptoms">Symptoms:</label>
+        <select id="symptoms" name="symptoms">
+            <option value="anxiety">Anxiety</option>
+            <option value="depression">Depression</option>
+            <option value="stress">Stress</option>
+            <option value="loss of interest">Loss of interest</option>
+            <option value="hallucinations">Hallucinations</option>
+            <option value="forgetfullness">Forgetfullness</option>
+            <option value="unable to enjoy activities">unable to enjoy activities</option>
+            
+        </select>
+
+        <button onclick="submitForm()">Submit Appointment</button>
+    </form>
+
+    <script>
+        function submitForm() {
+            alert("Your appointment has been scheduled! You will receive a confirmation shortly.");
+        }
+    </script>
+
+</body>
+</html>
